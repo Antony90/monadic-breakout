@@ -1,0 +1,35 @@
+name:                monadic-breakout
+version:             0.1.0.0
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+- gloss
+- containers
+
+library:
+  source-dirs: src
+
+executables:
+  monadic-breakout-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - monadic-breakout
+
+tests:
+  monadic-breakout-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - monadic-breakout
