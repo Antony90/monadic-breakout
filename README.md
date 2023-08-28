@@ -2,7 +2,7 @@
 
 
 <div align="center">
-<img src="assets/showcase-fast.gif" width=500 />
+<img src="assets/showcase-fast.gif" width=550 />
 </div>
 
 <p align="center">A remake of the classic Atari game Breakout in Haskell, gloss.</p>
@@ -11,7 +11,7 @@
 
 ### Controls
 - Cursor left/right - update the Paddle’s horizontal position
-- R - skip the current level, only for marking purposes
+- R - skip the current level
 - Enter, Space - Start a game / respawns a ball after loosing all
 
 ### Gameplay
@@ -36,7 +36,7 @@ Prerequisites:
 - `cabal`
 - OpenGL libraries (GLFW)
 
-Run the program `cabal install && cabal run breakout`
+Run the program `cabal install && cabal run monadic-breakout`
 
 </details>
 
